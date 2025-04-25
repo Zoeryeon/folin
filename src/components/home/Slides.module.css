@@ -1,0 +1,219 @@
+.articleslider {
+  position: static;
+}
+.articleslider [class*='swiper-button-prev'] {
+  width: 36px;
+  height: 36px;
+  left: -54px;
+  padding: 0 6px;
+  top: calc(50% + 35px);
+}
+.articleslider [class*='swiper-button-next'] {
+  width: 36px;
+  height: 36px;
+  right: -49px;
+  padding: 0 6px;
+  top: calc(50% + 35px);
+}
+.articleslider [class*='swiper-button-prev']::after {
+  color: black;
+  font-size: 20px;
+  display: block;
+  width: 26px;
+  text-align: center;
+}
+.articleslider [class*='swiper-button-next']::after {
+  color: black;
+  font-size: 20px;
+  display: block;
+  width: 26px;
+  text-align: center;
+}
+
+.subslider [class*='swiper-button'] {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 38px;
+  z-index: 11;
+}
+.subslider [class*='swiper-button-prev'] {
+  right: 80px;
+  top: 36px;
+  position: absolute;
+  color: aliceblue;
+  left: auto;
+}
+.subslider [class*='swiper-button-next'] {
+  right: 18px;
+  top: 36px;
+  position: absolute;
+  color: aliceblue;
+}
+.subslider [class*='swiper-button-prev']::after {
+  font-size: 12px;
+  text-align: center;
+}
+.subslider [class*='swiper-button-next']::after {
+  font-size: 12px;
+  text-align: center;
+}
+.subslider [class*='swiper-pagination-fraction'] {
+  width: 95px;
+  line-height: 18px;
+  padding: 3px 8px;
+  border-radius: 24px;
+  background-color: rgb(17, 17, 17);
+  color: rgb(255, 255, 255);
+  top: 10px;
+  right: 10px;
+  bottom: auto;
+  left: auto;
+  font-size: 12px;
+}
+
+.underLine {
+  position: static;
+  padding-top: 20px;
+}
+
+.underLine [class*='swiper-button'] {
+  position: absolute;
+}
+.underLine [class*='swiper-button-prev'] {
+  width: 36px;
+  height: 36px;
+  left: -54px;
+  padding: 0 6px;
+  top: calc(50% + 35px);
+}
+.underLine [class*='swiper-button-next'] {
+  width: 36px;
+  height: 36px;
+  right: -49px;
+  padding: 0 6px;
+  top: calc(50% + 35px);
+}
+.underLine [class*='swiper-button-prev']::after {
+  color: black;
+  font-size: 20px;
+  display: block;
+  width: 26px;
+  text-align: center;
+}
+.underLine [class*='swiper-button-next']::after {
+  color: black;
+  font-size: 20px;
+  display: block;
+  width: 26px;
+  text-align: center;
+}
+
+.liveslider {
+  position: static;
+}
+.liveslider [class*='swiper-button'] {
+  position: absolute;
+}
+.liveslider [class*='swiper-button-prev'] {
+  width: 36px;
+  height: 36px;
+  left: -5%;
+  padding: 0 6px;
+  top: 50%;
+}
+.liveslider [class*='swiper-button-next'] {
+  width: 36px;
+  height: 36px;
+  right: -5%;
+  left: auto;
+  padding: 0 6px;
+  top: 50%;
+}
+.liveslider [class*='swiper-button-prev']::after {
+  color: black;
+  font-size: 20px;
+  display: block;
+  width: 26px;
+  text-align: center;
+}
+.liveslider [class*='swiper-button-next']::after {
+  color: black;
+  font-size: 20px;
+  display: block;
+  width: 26px;
+  text-align: center;
+}
+
+.downloadslider [class*='swiper-button'] {
+  display: none;
+}
+
+/* 테블릿분기점 */
+@media (max-width: 1025px) {
+  .articleslider [class*='swiper-button-next'] {
+    top: 20px;
+    right: 24px;
+  }
+  .articleslider [class*='swiper-button-prev'] {
+    top: 20px;
+    right: 59px;
+    left: auto;
+  }
+
+  .underLine [class*='swiper-button-next'] {
+    top: 20px;
+    right: 24px;
+  }
+  .underLine [class*='swiper-button-prev'] {
+    top: 20px;
+    right: 59px;
+    left: auto;
+  }
+
+  .liveslider [class*='swiper-button-next'] {
+    top: -37px;
+    right: 0;
+  }
+  .liveslider [class*='swiper-button-prev'] {
+    top: -37px;
+    right: 36px;
+    left: auto;
+  }
+}
+
+/* 모바일분기점 */
+@media (max-width: 800px) {
+  .downloadslider [class*='swiper-button'] {
+    display: block;
+  }
+  .downloadslider [class*='swiper-button-prev'] {
+    width: 44px;
+    height: 34px;
+    left: 0;
+    padding: 0 6px;
+    top: 50%;
+  }
+  .downloadslider [class*='swiper-button-next'] {
+    width: 44px;
+    height: 34px;
+    right: 0;
+    left: auto;
+    padding: 0 6px;
+    top: 50%;
+  }
+  .downloadslider [class*='swiper-button-prev']::after {
+    color: black;
+    font-size: 28px;
+    display: block;
+    width: 26px;
+    text-align: center;
+  }
+  .downloadslider [class*='swiper-button-next']::after {
+    color: black;
+    font-size: 28px;
+    display: block;
+    width: 26px;
+    text-align: center;
+  }
+}
